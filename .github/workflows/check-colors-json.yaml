@@ -66,3 +66,4 @@ jobs:
             cat "$JSON_FILE" | jq -c '.[] | select(.color.r > 255 or .color.r < 0 or .color.g > 255 or .color.g < 0 or .color.b > 255 or .color.b < 0 )'
             exit 1
           fi
+          
